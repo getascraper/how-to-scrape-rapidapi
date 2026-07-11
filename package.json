@@ -1,0 +1,38 @@
+{
+  "name": "how-to-scrape-rapidapi",
+  "version": "1.0.0",
+  "description": "Extract API marketplace listings from RapidAPI Hub. Get category, pricing model, success rate, latency, subscriptions, and full developer profile for thousands of public APIs. Filter by category, pricing model, or quality threshold.",
+  "type": "module",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "node src/main.js"
+  },
+  "keywords": [
+    "apify",
+    "apify-actor",
+    "data-extraction",
+    "api-directory",
+    "developer-tools",
+    "market-research",
+    "rapidapi",
+    "rapidapi-scraper",
+    "rapidapi-data",
+    "api-marketplace",
+    "api-listings",
+    "api-pricing",
+    "api-catalog",
+    "api-discovery",
+    "api-hub",
+    "popularity-score",
+    "success-rate",
+    "latency",
+    "developer-profile",
+    "quality-threshold"
+  ],
+  "author": "Devansh-365",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "apify-client": "^2.12.0",
+    "dotenv": "^16.5.0"
+  }
+}

@@ -1,0 +1,56 @@
+# getascraper/how-to-scrape-rapidapi
+
+> RapidAPI Hub Scraper is an Apify Actor that extracts API marketplace listings from RapidAPI Hub. Free tier available.
+
+## Overview
+- RapidAPI Hub scraper and public API directory data extraction API
+- Extracts: category, pricing model, success rate, latency, subscriptions, developer profile
+- Output formats: JSON, CSV, Excel, XML, RSS
+- Free tier: included
+
+## Key Pages
+- README: https://github.com/getascraper/how-to-scrape-rapidapi/blob/main/README.md
+- Apify Store: https://apify.com/getascraper/rapidapi-scraper
+- Apify Console: https://console.apify.com/actors/getascraper~rapidapi-scraper
+- Source Actor: https://github.com/getascraper/actorstack/tree/main/actors/rapidapi-scraper
+
+## How it works
+1. Connects to the RapidAPI Hub and discovers featured and category API listings
+2. Applies category, pricing model, popularity, success rate, and latency filters
+3. Returns a flat dataset with one row per API, or one row per endpoint with deep scrape enabled
+
+## Target site characteristics
+- Public API marketplace listing pages, no login required
+- Over 40,000 public APIs across every category
+- Global coverage, all categories from Weather to Finance to Sports
+
+## API Usage
+- Node.js SDK: https://docs.apify.com/api/client/js
+- REST API: https://docs.apify.com/api/v2
+- MCP server: https://github.com/apify/apify-mcp-server
+
+## Supported target URLs
+- https://rapidapi.com/hub
+- https://rapidapi.com/category/{category}
+- https://rapidapi.com/collection/{collection-slug}
+
+## Pricing
+- Free tier: included, first 50 results of every run
+- Paid: $0.79 per 1,000 results
+
+## Output schema (highlights)
+- category: primary category on RapidAPI Hub
+- pricing_model: FREE, FREEMIUM, or PAID
+- success_rate_percent: average success rate percentage
+- latency_ms: average response latency in milliseconds
+- subscriptions_count: number of active subscribers
+- developer_name: full display name of the developer
+
+## Use cases
+- SaaS founders scouting undersaturated API categories before building
+- Competitive researchers tracking popularity and subscriber counts over time
+- Integration developers auditing latency and reliability before subscribing
+
+## Support
+- GitHub Issues: https://github.com/getascraper/how-to-scrape-rapidapi/issues
+- Apify Console: https://console.apify.com/actors/getascraper~rapidapi-scraper/issues
